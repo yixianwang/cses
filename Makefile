@@ -10,7 +10,7 @@ all: clean compile
 
 compile: 
 	$(CC) $(FLAG) -o $(EXEC) $(SRC1) 
-	# ./$(EXEC)
+	./$(EXEC)
 
 clean:
 	rm -f $(EXEC) 

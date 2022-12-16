@@ -5,8 +5,7 @@ using namespace std;
  
 // This function generates all n bit Gray codes and prints the
 // generated codes
-void generateGrayarr(int n)
-{
+void generateGrayarr(int n) {
     // base case
     if (n <= 0)
         return;
@@ -21,8 +20,7 @@ void generateGrayarr(int n)
     // Every iteration of this loop generates 2*i codes from previously
     // generated i codes.
     int i, j;
-    for (i = 2; i < (1<<n); i <<= 1)
-    {
+    for (i = 2; i < (1<<n); i <<= 1) {
         // Enter the prviously generated codes again in arr[] in reverse
         // order. Nor arr[] has double number of codes.
         for (j = i-1 ; j >= 0 ; j--)
@@ -43,8 +41,7 @@ void generateGrayarr(int n)
 }
  
 // Driver program to test above function
-int main()
-{
+int main() {
     generateGrayarr(3);
     return 0;
 }
